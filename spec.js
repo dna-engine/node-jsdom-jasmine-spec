@@ -4,8 +4,7 @@
 
 // Run:
 //    $ cd dnajs-node-jsdom-jasmine-spec
-//    $ npm update
-//    $ node spec.js
+//    $ npm test
 
 var html = `
 <!doctype html>
@@ -20,10 +19,10 @@ var html = `
 </html>
 `;
 
-var document =     require('jsdom').jsdom(html);
-var window =       document.defaultView;
-var $ =            require('jquery')(window);
-var dna =          require('dna.js')(window, $);
+const { JSDOM } = require('jsdom');
+const window =    new JSDOM(html).window;
+const $ =         require('jquery')(window);
+const dna =       require('dna.js')(window, $);
 var app =          require('./app.js')(window, $, dna);
 var Jasmine =      require('jasmine');
 var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
@@ -34,7 +33,7 @@ jasmine.addReporter(new SpecReporter());
 describe('Utility function dna.array.fromMap()', () => {
    it('converts a map into an array of maps', () => {
       var map = { a: { word: 'Ant' }, b: { word: 'Bat' } };
-      var actual = dna.array.fromMap(map, 'letter');
+      var actual =   dna.array.fromMap(map, 'letter');
       var expected = [{ word: 'Ant', letter: 'a' }, { word: 'Bat', letter: 'b' }];
       expect(actual).toEqual(expected);
       });
@@ -44,7 +43,7 @@ describe('Utility function dna.array.fromMap()', () => {
 describe('Lunch', () => {
    it('is ording and eating bulgogi', () => {
       app.doLunch();
-      var actual = dna.getModel('task');
+      var actual =   dna.getModel('task');
       var expected = [{ title: 'Order bulgogi' }, { title: 'Eat bulgogi' }];
       expect(actual).toEqual(expected);
       });

@@ -18,7 +18,7 @@
    },
    "devDependencies": {
       "jasmine":               "~2.5",
-      "jasmine-spec-reporter": "~3.2",
-      "jsdom":                 "~9.12"
+      "jasmine-spec-reporter": "~4.1",
+      "jsdom":                 "~11.0"
    }
 }
