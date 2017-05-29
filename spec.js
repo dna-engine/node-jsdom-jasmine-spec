@@ -6,7 +6,7 @@
 //    $ cd dnajs-node-jsdom-jasmine-spec
 //    $ npm test
 
-var html = `
+const html = `
 <!doctype html>
 <html lang=en>
    <head>
@@ -23,18 +23,18 @@ const { JSDOM } = require('jsdom');
 const window =    new JSDOM(html).window;
 const $ =         require('jquery')(window);
 const dna =       require('dna.js')(window, $);
-var app =          require('./app.js')(window, $, dna);
-var Jasmine =      require('jasmine');
-var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-var jasmine = new Jasmine().jasmine.getEnv();
+const app =          require('./app.js')(window, $, dna);
+const Jasmine =      require('jasmine');
+const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+const jasmine = new Jasmine().jasmine.getEnv();
 jasmine.addReporter(new SpecReporter());
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Utility function dna.array.fromMap()', () => {
    it('converts a map into an array of maps', () => {
-      var map = { a: { word: 'Ant' }, b: { word: 'Bat' } };
-      var actual =   dna.array.fromMap(map, 'letter');
-      var expected = [{ word: 'Ant', letter: 'a' }, { word: 'Bat', letter: 'b' }];
+      const map = { a: { word: 'Ant' }, b: { word: 'Bat' } };
+      const actual =   dna.array.fromMap(map, 'letter');
+      const expected = [{ word: 'Ant', letter: 'a' }, { word: 'Bat', letter: 'b' }];
       expect(actual).toEqual(expected);
       });
    });
@@ -43,10 +43,11 @@ describe('Utility function dna.array.fromMap()', () => {
 describe('Lunch', () => {
    it('is ording and eating bulgogi', () => {
       app.doLunch();
-      var actual =   dna.getModel('task');
-      var expected = [{ title: 'Order bulgogi' }, { title: 'Eat bulgogi' }];
+      const actual =   dna.getModel('task');
+      const expected = [{ title: 'Order bulgogi' }, { title: 'Eat bulgogi' }];
       expect(actual).toEqual(expected);
       });
    });
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
 jasmine.execute();
