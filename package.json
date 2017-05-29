@@ -10,15 +10,24 @@
    "docs":        "http://dnajs.org/docs",
    "keywords":    ["dna.js", "node", "jsdom", "jasmine", "javascript"],
    "author":      { "name": "Center Key", "url": "http://centerkey.com" },
+   "jshintConfig": {
+      "esversion": 6,
+      "node":      true,
+      "jasmine":   true,
+      "undef":     true,
+      "unused":    true
+   },
    "scripts": {
-      "test": "jasmine spec.js"
-      },
+      "pretest": "jshint *.js",
+      "test":    "jasmine spec.js"
+   },
    "dependencies": {
       "dna.js": "~1.2"
    },
    "devDependencies": {
       "jasmine":               "~2.5",
       "jasmine-spec-reporter": "~4.1",
-      "jsdom":                 "~11.0"
+      "jsdom":                 "~11.0",
+      "jshint":                "~2.9"
    }
 }

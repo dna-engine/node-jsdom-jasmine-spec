@@ -19,15 +19,15 @@ const html = `
 </html>
 `;
 
-const { JSDOM } = require('jsdom');
-const window =    new JSDOM(html).window;
-const $ =         require('jquery')(window);
-const dna =       require('dna.js')(window, $);
+const { JSDOM } =    require('jsdom');
+const window =       new JSDOM(html).window;
+const $ =            require('jquery')(window);
+const dna =          require('dna.js')(window, $);
 const app =          require('./app.js')(window, $, dna);
 const Jasmine =      require('jasmine');
 const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-const jasmine = new Jasmine().jasmine.getEnv();
-jasmine.addReporter(new SpecReporter());
+const env =          new Jasmine().jasmine.getEnv();
+env.addReporter(new SpecReporter());
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Utility function dna.array.fromMap()', () => {
@@ -50,4 +50,4 @@ describe('Lunch', () => {
    });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-jasmine.execute();
+env.execute();
