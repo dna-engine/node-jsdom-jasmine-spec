@@ -10,6 +10,9 @@
    "docs":        "http://dnajs.org/docs",
    "keywords":    ["dna.js", "node", "jsdom", "jasmine", "javascript"],
    "author":      { "name": "Center Key", "url": "http://centerkey.com" },
+   "scripts": {
+      "test": "jasmine spec.js"
+      },
    "dependencies": {
       "dna.js": "~1.2"
    },
