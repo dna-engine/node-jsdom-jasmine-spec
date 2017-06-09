@@ -1,7 +1,7 @@
 {
    "name":        "dnajs-node-jsdom-jasmine-spec",
-   "version":     "1.0.0",
    "description": "Sample dna.js project running on Node.js and jsdom executing Jasmine test cases",
+   "version":     "1.0.0",
    "license":     "MIT",
    "main":        "app.js",
    "repository":  "dnajs/dnajs-node-jsdom-jasmine-spec",
@@ -10,22 +10,23 @@
    "docs":        "http://dnajs.org/docs",
    "keywords":    ["dna.js", "node", "jsdom", "jasmine", "javascript"],
    "author":      { "name": "Center Key", "url": "http://centerkey.com" },
+   "scripts": {
+      "pretest": "jshint *.js",
+      "test":    "jasmine spec.js"
+   },
    "jshintConfig": {
       "esversion": 6,
+      "strict":    "implied",
       "node":      true,
       "jasmine":   true,
       "undef":     true,
       "unused":    true
    },
-   "scripts": {
-      "pretest": "jshint *.js",
-      "test":    "jasmine spec.js"
-   },
    "dependencies": {
       "dna.js": "~1.2"
    },
    "devDependencies": {
-      "jasmine":               "~2.5",
+      "jasmine":               "~2.6",
       "jasmine-spec-reporter": "~4.1",
       "jsdom":                 "~11.0",
       "jshint":                "~2.9"
