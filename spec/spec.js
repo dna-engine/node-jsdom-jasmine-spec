@@ -14,7 +14,7 @@ const html = `
       <title>Specification Runner</title>
    </head>
    <body>
-      <p id=task class=dna-template>~~title~~</p>
+      <h2 id=task class=dna-template>~~title~~</h2>
    </body>
 </html>
 `;
@@ -23,17 +23,13 @@ const { JSDOM } =    require('jsdom');
 const window =       new JSDOM(html).window;
 const $ =            require('jquery')(window);
 const dna =          require('dna.js')(window, $);
-const app =          require('./app.js')(window, $, dna);
-const Jasmine =      require('jasmine');
-const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-const env =          new Jasmine().jasmine.getEnv();
-env.addReporter(new SpecReporter());
+const app =          require('../app.js')(window, $, dna);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Utility function dna.array.fromMap()', () => {
    it('converts a map into an array of maps', () => {
       const map = { a: { word: 'Ant' }, b: { word: 'Bat' } };
-      const actual =   dna.array.fromMap(map, 'letter');
+      const actual =   dna.array.fromMap(map, { key: 'letter' });
       const expected = [{ word: 'Ant', letter: 'a' }, { word: 'Bat', letter: 'b' }];
       expect(actual).toEqual(expected);
       });
@@ -48,6 +44,3 @@ describe('Lunch', () => {
       expect(actual).toEqual(expected);
       });
    });
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-env.execute();
