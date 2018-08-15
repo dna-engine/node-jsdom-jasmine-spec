@@ -6,11 +6,14 @@
 # To make this file runnable:
 #     $ chmod +x *.sh.command
 
+banner="dnajs-node-jsdom-jasmine-spec"
 projectHome=$(cd $(dirname $0); pwd)
 
 setupTools() {
-   # Check for Node.js installation and download project dependencies
    cd $projectHome
+   echo
+   echo $banner
+   echo $(echo $banner | sed -e "s/./=/g")
    pwd
    echo
    echo "Node.js:"
@@ -28,8 +31,5 @@ runSpecs() {
    echo
    }
 
-echo
-echo "dnajs-node-jsdom-jasmine-spec"
-echo "============================="
 setupTools
 runSpecs
