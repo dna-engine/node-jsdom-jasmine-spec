@@ -8,6 +8,7 @@
    "homepage": "https://github.com/dnajs/dnajs-node-jsdom-jasmine-spec",
    "bugs": "https://github.com/dnajs/dnajs-node-jsdom-jasmine-spec/issues",
    "docs": "https://dnajs.org/docs",
+   "author": "Center Key (https://centerkey.com)",
    "keywords": [
       "dna.js",
       "node",
@@ -15,10 +16,6 @@
       "jasmine",
       "javascript"
    ],
-   "author": {
-      "name": "Center Key",
-      "url": "https://centerkey.com"
-   },
    "jshintConfig": {
       "esversion": 6,
       "strict": "implied",
@@ -39,7 +36,7 @@
       "jasmine": "~3.2",
       "jasmine-console-reporter": "~3.1",
       "jasmine-spec-reporter": "~4.2",
-      "jsdom": "~12.2",
+      "jsdom": "~13.0",
       "jshint": "~2.9"
    }
 }

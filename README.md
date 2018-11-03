@@ -3,7 +3,7 @@
 
 _Sample dna.js project running on Node.js with jsdom executing Jasmine test cases_
 
-[![Build Status](https://travis-ci.org/dnajs/dnajs-node-jsdom-jasmine-spec.svg)](https://travis-ci.org/dnajs/dnajs-node-jsdom-jasmine-spec)
+[![Build](https://travis-ci.org/dnajs/dnajs-node-jsdom-jasmine-spec.svg)](https://travis-ci.org/dnajs/dnajs-node-jsdom-jasmine-spec)
 
 [dnajs.org](https://dnajs.org)
 
