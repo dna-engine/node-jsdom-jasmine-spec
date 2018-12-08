@@ -25,17 +25,18 @@
       "jasmine": true
    },
    "scripts": {
-      "pretest": "jshint *.js spec/*.js spec/**/*.js",
+      "pretest": "jshint *.js spec",
       "test": "jasmine"
    },
    "dependencies": {
-      "dna.js": "~1.4",
+      "dna.js": "~1.5",
       "jquery": "~3.3"
    },
    "devDependencies": {
       "jasmine": "~3.3",
       "jasmine-spec-reporter": "~4.2",
       "jsdom": "~13.0",
-      "jshint": "~2.9"
+      "jshint": "~2.9",
+      "request": "~2.88"
    }
 }
