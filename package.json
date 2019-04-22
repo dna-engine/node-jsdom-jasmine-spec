@@ -17,8 +17,9 @@
       "javascript"
    ],
    "jshintConfig": {
-      "esversion": 6,
+      "esversion": 9,
       "strict": "implied",
+      "eqeqeq": true,
       "undef": true,
       "unused": true,
       "node": true,
@@ -30,13 +31,13 @@
    },
    "dependencies": {
       "dna.js": "~1.5",
-      "jquery": "~3.3"
+      "jquery": "~3.4"
    },
    "devDependencies": {
-      "jasmine": "~3.3",
+      "jasmine": "~3.4",
       "jasmine-spec-reporter": "~4.2",
-      "jsdom": "~13.1",
-      "jshint": "~2.9",
+      "jsdom": "~15.0",
+      "jshint": "~2.10",
       "request": "~2.88"
    }
 }
