@@ -30,7 +30,7 @@
       "test": "jasmine"
    },
    "dependencies": {
-      "dna.js": "~1.5",
+      "dna.js": "~1.6",
       "jquery": "~3.4"
    },
    "devDependencies": {
