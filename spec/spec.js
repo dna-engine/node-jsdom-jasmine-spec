@@ -22,8 +22,10 @@ const html = `
 const { JSDOM } = require('jsdom');
 const window =    new JSDOM(html).window;
 const $ =         require('jquery')(window);
-const dna =       require('dna.js')(window, $);
-const app =       require('../app.js')(window, $, dna);
+const { dna } =   require('dna.js');
+const { app } =   require('../app.js');
+dna.initGlobal(window, $);
+app.init(window, $, dna);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('Utility function dna.array.fromMap()', () => {
