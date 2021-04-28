@@ -31,13 +31,13 @@
    },
    "dependencies": {
       "dna.js": "~1.7",
-      "jquery": "~3.5"
+      "jquery": "~3.6"
    },
    "devDependencies": {
-      "canvas": "~2.6",
-      "jasmine": "~3.6",
-      "jasmine-spec-reporter": "~6.0",
-      "jsdom": "~16.4",
+      "canvas": "~2.7",
+      "jasmine": "~3.7",
+      "jasmine-spec-reporter": "~7.0",
+      "jsdom": "~16.5",
       "jshint": "~2.12"
    }
 }
