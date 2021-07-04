@@ -30,12 +30,12 @@
       "test": "jasmine"
    },
    "dependencies": {
-      "dna.js": "~1.7",
+      "dna.js": "~1.8",
       "jquery": "~3.6"
    },
    "devDependencies": {
       "canvas": "~2.8",
-      "jasmine": "~3.7",
+      "jasmine": "~3.8",
       "jasmine-spec-reporter": "~7.0",
       "jsdom": "~16.6",
       "jshint": "~2.13"
