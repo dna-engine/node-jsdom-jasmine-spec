@@ -1,16 +1,16 @@
 {
-   "name": "dnajs-node-jsdom-jasmine-spec",
-   "description": "Sample dna.js project running on Node.js and jsdom executing Jasmine test cases",
+   "name": "node-jsdom-jasmine-spec",
+   "description": "Sample dna-engine project running on Node.js and jsdom executing Jasmine test cases",
    "version": "1.0.0",
    "license": "MIT",
    "main": "app.js",
-   "repository": "github:dnajs/dnajs-node-jsdom-jasmine-spec",
-   "homepage": "https://github.com/dnajs/dnajs-node-jsdom-jasmine-spec",
-   "bugs": "https://github.com/dnajs/dnajs-node-jsdom-jasmine-spec/issues",
-   "docs": "https://dnajs.org/docs",
+   "repository": "github:dna-engine/node-jsdom-jasmine-spec",
+   "homepage": "https://github.com/dna-engine/node-jsdom-jasmine-spec",
+   "bugs": "https://github.com/dna-engine/node-jsdom-jasmine-spec/issues",
+   "docs": "https://dna-engine.org/docs",
    "author": "Center Key (https://centerkey.com)",
    "keywords": [
-      "dna.js",
+      "dna-engine",
       "node",
       "jsdom",
       "jasmine",
@@ -30,7 +30,7 @@
       "test": "jasmine"
    },
    "dependencies": {
-      "dna.js": "~2.0",
+      "dna-engine": "~2.2",
       "jquery": "~3.6"
    },
    "devDependencies": {

@@ -1,16 +1,16 @@
-///////////////////////////////////
-// dnajs-node-jsdom-jasmine-spec //
-///////////////////////////////////
+/////////////////////////////
+// node-jsdom-jasmine-spec //
+/////////////////////////////
 
 // Run:
-//    $ cd dnajs-node-jsdom-jasmine-spec
+//    $ cd node-jsdom-jasmine-spec
 //    $ npm test
 
 // Imports
+import { app } from '../app.js';
+import { dna } from 'dna-engine';
 import { JSDOM } from 'jsdom';
 import jQuery from 'jquery';
-import { dna } from 'dnajs';
-import { app } from '../app.js';
 
 // Setup
 const html = `

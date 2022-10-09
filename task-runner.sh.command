@@ -1,12 +1,12 @@
 #!/bin/bash
-#################################
-# dnajs-node-jsdom-jasmine-spec #
-#################################
+###########################
+# node-jsdom-jasmine-spec #
+###########################
 
 # To make this file runnable:
 #     $ chmod +x *.sh.command
 
-banner="dnajs-node-jsdom-jasmine-spec"
+banner="node-jsdom-jasmine-spec"
 projectHome=$(cd $(dirname $0); pwd)
 
 setupTools() {

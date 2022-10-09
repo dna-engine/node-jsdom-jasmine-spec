@@ -1,9 +1,9 @@
 ///////////////////////////////////
-// dnajs-node-jsdom-jasmine-spec //
+// node-jsdom-jasmine-spec //
 ///////////////////////////////////
 
 // Run:
-//    $ cd dnajs-node-jsdom-jasmine-spec
+//    $ cd node-jsdom-jasmine-spec
 //    $ npm test
 
 const html = `
@@ -19,11 +19,11 @@ const html = `
 </html>
 `;
 
+const { app } =   require('../app.js');
+const { dna } =   require('dna-engine');
 const { JSDOM } = require('jsdom');
 const window =    new JSDOM(html).window;
 const $ =         require('jquery')(window);
-const { dna } =   require('dna.js');
-const { app } =   require('../app.js');
 dna.initGlobal(window, $);
 app.init(window, $, dna);
 
