@@ -34,10 +34,10 @@
       "jquery": "~3.6"
    },
    "devDependencies": {
-      "canvas": "~2.10",
-      "jasmine": "~4.4",
+      "canvas": "~2.11",
+      "jasmine": "~4.5",
       "jasmine-spec-reporter": "~7.0",
-      "jsdom": "~20.0",
+      "jsdom": "~21.0",
       "jshint": "~2.13"
    }
 }
