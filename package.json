@@ -3,6 +3,8 @@
    "description": "Sample dna-engine project running on Node.js and jsdom executing Jasmine test cases",
    "version": "1.0.0",
    "license": "MIT",
+   "type": "module",
+   "module": "app.js",
    "main": "app.js",
    "repository": "github:dna-engine/node-jsdom-jasmine-spec",
    "homepage": "https://github.com/dna-engine/node-jsdom-jasmine-spec",
@@ -17,7 +19,7 @@
       "javascript"
    ],
    "jshintConfig": {
-      "esversion": 9,
+      "esversion": 11,
       "strict": "implied",
       "eqeqeq": true,
       "undef": true,
@@ -27,17 +29,17 @@
    },
    "scripts": {
       "pretest": "jshint . --exclude-path .gitignore",
-      "test": "jasmine"
+      "test": "jasmine --reporter=jasmine-ts-console-reporter"
    },
    "dependencies": {
-      "dna-engine": "~2.3",
-      "jquery": "~3.7"
+      "dna-engine": "~3.0"
    },
    "devDependencies": {
+      "assert-deep-strict-equal": "~1.1",
       "canvas": "~2.11",
       "jasmine": "~5.0",
-      "jasmine-spec-reporter": "~7.0",
-      "jsdom": "~22.0",
+      "jasmine-ts-console-reporter": "~3.1",
+      "jsdom": "~22.1",
       "jshint": "~2.13"
    }
 }
