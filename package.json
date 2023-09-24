@@ -6,7 +6,10 @@
    "type": "module",
    "module": "app.js",
    "main": "app.js",
-   "repository": "github:dna-engine/node-jsdom-jasmine-spec",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dna-engine/node-jsdom-jasmine-spec.git"
+   },
    "homepage": "https://github.com/dna-engine/node-jsdom-jasmine-spec",
    "bugs": "https://github.com/dna-engine/node-jsdom-jasmine-spec/issues",
    "docs": "https://dna-engine.org/docs",
@@ -37,7 +40,7 @@
    "devDependencies": {
       "assert-deep-strict-equal": "~1.1",
       "canvas": "~2.11",
-      "jasmine": "~5.0",
+      "jasmine": "~5.1",
       "jasmine-ts-console-reporter": "~3.1",
       "jsdom": "~22.1",
       "jshint": "~2.13"
