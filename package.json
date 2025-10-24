@@ -34,13 +34,13 @@
       "test": "jasmine --reporter=jasmine-ts-console-reporter"
    },
    "dependencies": {
-      "dna-engine": "~3.2"
+      "dna-engine": "~3.3"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
-      "jasmine": "~5.6",
+      "jasmine": "~5.12",
       "jasmine-ts-console-reporter": "~3.1",
-      "jsdom": "~26.0",
+      "jsdom": "~27.0",
       "jshint": "~2.13"
    }
 }
