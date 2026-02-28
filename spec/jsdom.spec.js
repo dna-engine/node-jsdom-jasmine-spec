@@ -9,7 +9,7 @@
 // Imports
 import { app } from '../app.js';
 import { assertDeepStrictEqual } from 'assert-deep-strict-equal';
-import { dna } from 'dna-engine';
+import { dna } from 'dna-dom';
 import { JSDOM } from 'jsdom';
 
 // Setup
